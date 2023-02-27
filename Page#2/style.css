@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* img {
+  width: 100px;
+} */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #708090;
+  padding: 1em 0.5em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header .logo {
+  color: #fff;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+header .logo i {
+  display: block;
+  align-self: center;
+}
+
+header nav {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  font-style: none;
+  padding: 0 1rem;
+  column-gap: 1.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: clamp(1.1rem, 1vw, 1.3rem);
+}
+
+.humberger-menu {
+  color: #fff;
+  font-size: clamp(1.5rem, 2vw, 1.6rem);
+  line-height: 1.6;
+}
+
+.section-one {
+  padding: 1em 0.5em;
+  background: url('https://images.pexels.com/photos/4672712/pexels-photo-4672712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+    radial-gradient(#444, #111);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #fff;
+  padding: clamp(3.25rem, 15vw, 7.5rem) clamp(1rem, 5vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  line-height: 1.4;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  word-wrap: break-word;
+}
+
+p {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  line-height: 1.7;
+  padding: 0.75rem 0;
+  word-wrap: break-word;
+}
+.section-one-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(2% + 0.7rem);
+  padding: 2rem 0;
+  width: 100%;
+}
+
+button {
+  background-color: #008080;
+  border: none;
+  border-radius: 3rem;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+}
+
+.section-one .section-one-btn .Secondary {
+  background-color: #808000;
+}
+
+.section-two {
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  padding: 1.3rem clamp(1rem, 5vw, 2rem);
+  margin: clamp(0.5rem, 2vw, 1rem) 0;
+}
+.section-three {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.section-three .card {
+  background-color: #fff;
+  overflow: hidden;
+  max-width: 25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.section-three .card h4 {
+  text-align: center;
+}
+.section-three .card p {
+  padding: 0.75rem clamp(0.3rem, 2vw, 1rem);
+}
+.section-three .card-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.section-three .card img {
+  width: 100%;
+  max-height: 18.5rem;
+}
+.section-four {
+  background-color: #e5e4e2;
+  padding: clamp(0.5rem, 3vw, 1.2rem);
+}
+
+.section-four img {
+  width: 100%;
+}
+.section-four .four-text {
+  width: clamp(15rem, 95vw, 30rem);
+}
+.section-four .four-text p {
+  text-align: center;
+}
+.section-four .four-image {
+  width: clamp(15rem, 95vw, 30rem);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+#footer .link-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 18.5rem));
+  row-gap: 1.3rem;
+  padding: 1rem 0;
+}
+#footer .link-container .compName {
+  display: flex;
+  align-items: center;
+  column-gap: 0.3rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  line-height: 1.4;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  word-wrap: break-word;
+}
+#footer .link-container .links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+#footer .link-container .links ul a {
+  text-decoration: none;
+  color: #fff;
+}
+#footer .link-container .links:last-child ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  column-gap: 1rem;
+  padding-top: 0.7rem;
+}
+#footer .link-container .links:last-child ul li a {
+  font-size: 1.3rem;
+  border: 2px solid #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
+  text-align: center;
+}
+#footer .link-container .links:last-child ul li:nth-child(1) a {
+  color: #3b5998;
+  background-color: #fff;
+}
+#footer .link-container .links:last-child ul li:nth-child(2) a {
+  color: #1da1f2;
+  background-color: #fff;
+}
+#footer .link-container .links:last-child ul li:nth-child(3) a {
+  color: #c13584;
+  background-color: #fff;
+}
+#footer .link-container .links:last-child ul li:nth-child(4) a {
+  color: #211f1f;
+  background-color: #fff;
+}
+
+#footer .copy-right {
+  display: flex;
+  place-content: center;
+  font-size: 1.2rem;
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+}
+
+/* ================================================================ Media queries */
+@media (min-width: 640px) {
+  .section-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .humberger-menu {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-three {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1024px) {
+  .section-four {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+  .section-four .four-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 3.5rem;
+  }
+}
