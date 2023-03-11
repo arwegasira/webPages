@@ -1,2 +1,2 @@
-Experimental web page
-The page is not responsive
+This page is Build with HTMl and CSS
+It is not responsive
